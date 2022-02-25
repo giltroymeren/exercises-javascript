@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Barlow Semi Condensed", Arial, Helvetica, sans-serif;
+  src: url("/fonts/BarlowSemiCondensed-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  src: url("/fonts/FiraSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+body {
+  background: #FAFAFA;
+  background-image: url("images/background.png");
+  background-position: top center;
+  background-repeat: no-repeat; 
+  background-size: contain;
+  color: #1E2333;
+  font-family: "Fira Sans";
+}
+
+h1, h2, h3 {
+  font-family: "Barlow Semi Condensed";
+}
+
+header {
+  margin-top: 114.5px;
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-size: 40px;
+  letter-spacing: 0.07px;
+  text-align: center;
+  text-shadow: 0px 3px 15px #1F263E;
+  text-transform: uppercase;
+}
+
+header > div {
+  margin-top: 34.8px;
+}
+  header div p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+  header div.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    header div.rating img {
+      width: 100px;
+      margin-right: 8px;
+    }
+    header div.rating span {
+      color: #F85036;
+    }
+
+#container-benefits {
+  width: 80%;
+  margin: 48px auto 0 auto;
+}
+  div.benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+
+    opacity: 0;
+	  animation: fade-drops 1s ease-in both;
+  }
+    div.benefit-item img {
+      width: 24px;
+      margin-right: 19px;
+    } 
+    div.benefit-item .benefit-item-desc h3,
+    div.benefit-item .benefit-item-desc p {
+      margin-top: 0px;
+      margin-bottom: 4px
+    }
+    div.benefit-item .benefit-item-desc h3 {
+      font-size: 18px;
+    }
+    div.benefit-item .benefit-item-desc p {
+      color: #13D68F;
+    }
+    
+  div.benefit-item:nth-child(2) {
+    animation-delay: 1s;
+  }
+  div.benefit-item:nth-child(3) {
+    animation-delay: 2s;
+  }
+
+  @keyframes fade-drops {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -20%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+#container-promo {
+  margin-top: 52px;
+  text-align: center;
+}
+  #container-promo > p {
+    margin-bottom: 8px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+
+  #container-promo button {
+    width: 90%;
+    padding: 10px;
+    background: #13D68F;
+    border-radius: 46px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  #container-promo button p strong {
+    font-family: "Barlow Semi Condensed";
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  #container-promo button p {
+    margin: 0 auto 4px 0;
+  }
+
+footer {
+  margin-top: 24px;
+  padding: 0 16px 16px 16px;
+}
+
+  footer p {
+    color: #414141;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+
+img#close-button {
+  width: 14px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}

@@ -1,0 +1,1 @@
+This is a collection of my solutions for the [2023 Advent JS challenge](https://adventjs.dev/).
